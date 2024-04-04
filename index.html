@@ -48,23 +48,111 @@
                 </li>
             </ul>
         </address>
-        <button type="button" class="open-menu-bth">
-            <svg width="24" height="24"> 
-                <use href="./images/icons.svg#icon-Group-1">
-
-                </use>
+        <button type="button" class="adress-buton-icon">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-Group-1"></use>
             </svg>
-
-        </button>
+          </button>
     </div>
+    <!-- header-modalca -->
+    <!-- is-open -->
+    <div class="mob-menu is-open">
+        <div>
+          <button type="button" class="mob-button-close">
+            <svg class="mob-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mob-nav-list">
+              <li class="mob-nav-item">
+                <a href="./index.html" class="mob-nav-link">Studio</a>
+              </li>
+              <li class="mob-nav-item">
+                <a href="" class="mob-nav-link">Portfolio</a>
+              </li>
+              <li class="mob-nav-item">
+                <a href="" class="mob-nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mob-contacts">
+            <ul class="mob-contacts-list">
+              <li>
+                <a href="tel:+110001111111" class="mob-contacts-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mob-contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-media-links-list">
+            <li class="mob-media-item">
+              <a
+                class="mob-media-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-item">
+              <a
+                class="mob-media-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-item">
+              <a
+                class="mob-media-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-item">
+              <a
+                class="mob-media-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
         </header>
         <main>
-            <!-- <section class="section-title flex-title">
+            <section class="section-title flex-title">
                 <div class="container ">               
         <h1 class="section-logo flex-section-logo">Effective Solutions for Your Business</h1>
         <button class="button flex-button" type="button">Order Service</button>
     </div>
-        </section> -->
+        </section>
 <section class="section-tu">
     <div class="container">  
         <h2 class="section-team-logo visually-hidden"   >Peculiarities</h2>
@@ -118,11 +206,17 @@
 </div>
 </section>
 <section class="section-our-team flex-section-fri">
-    <div class="container">  
+    <div class="container fri-cntainer">  
     <h2 class="section-team-logo flex-section-fri-logo">Our Team</h2>
     <ul class="flex-list-section-fri">
         <li class="section-team-list flex-list-logo ">
-            <img src="./images/img1.jpg" alt="Mark Guerrero" width="264" height="264">
+            <img 
+            srcset="./images/img.jpg 2x, 
+            ./images/img1.jpg"
+            src="./images/img1.jpg" 
+            alt="Mark Guerrero" 
+            width="264" height="264"
+            >
            <div class="username-posade-list">
              <h3 class="team-name flex-name">Mark Guerrero</h3>
             <p class="team-paragraf flex-poragrof">Product Designer</p>
@@ -161,7 +255,12 @@
         </div>
         </li>
         <li class="section-team-list flex-list-logo">
-            <img  src="./images/img2.jpg" alt="Tom Ford" width="264" height="264">
+            <img  
+            srcset="./images/img1x2.jpg 2x"
+            src="./images/img2.jpg" 
+            alt="Tom Ford" 
+            width="264" height="264"
+            >
             <div class="username-posade-list">
                  <h3 class="team-name flex-name">Tom Ford</h3>
             <p class="team-paragraf flex-poragrof">Frontend Developer</p>
@@ -200,7 +299,12 @@
             </div>
         </li>
         <li class="section-team-list flex-list-logo">
-            <img  src="./images/img3.jpg" alt="Camila Garcia" width="264" height="264">
+            <img  
+            srcset="./images/img2x2.jpg 2x"
+            src="./images/img3.jpg" 
+            alt="Camila Garcia" 
+            width="264" height="264"
+            >
             <div class="username-posade-list">
                 <h3 class="team-name flex-name">Camila Garcia</h3>
             <p class="team-paragraf flex-poragrof">Marketing</p>
@@ -239,7 +343,12 @@
             </div>
         </li>
         <li class="section-team-list flex-list-logo">
-            <img src="./images/img4.jpg" alt="Daniel Wilson" width="264" height="264">
+            <img 
+            srcset="./images/img3x2.jpg 2x"
+            src="./images/img4.jpg" 
+            alt="Daniel Wilson"
+             width="264" height="264"
+             >
             <div class="username-posade-list">
                   <h3 class="team-name flex-name">Daniel Wilson</h3>
             <p class="team-paragraf flex-poragrof">UI Designer</p>
@@ -280,13 +389,17 @@
     </ul>
 </div>
 </section>
-<!-- <section class="section-fo">
+<section class="section-fo">
     <div class="container">  
         <h2 id="4" class="section-portfolio-logo flex-logo-section-fo">Our Portfolio</h2>
         <ul class="flex-list-section-fo">
             <li class="images-section-fo li-list">
                 <div class="conteiner-icon-section-fo">
-                <img  src="./images/img12.jpg" alt="Banking App" width="360" height="300">
+                <img  
+                src="./images/img12.jpg" 
+                alt="Banking App" 
+                width="360" height="300"
+                >
 
 <p class="paragraf-icon-section-fo">14 Stylish and User-Friendly App Design Concepts · Task Manager App 
     · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -299,7 +412,10 @@
             </li>
             <li class="images-section-fo li-list">
                 <div class="conteiner-icon-section-fo">
+
+                   
                 <img  src="./images/img7.jpg" alt="Cashless Payment" width="360" height="300">
+           
                 <p class="paragraf-icon-section-fo">14 Stylish and User-Friendly App Design Concepts · Task Manager App 
                     · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
@@ -310,8 +426,10 @@
             </li>
             <li class="images-section-fo li-list">
                 <div class="conteiner-icon-section-fo">
-                <img  src="./images/img8.jpg" alt="Meditation App" width="360" height="300">
-                <p class="paragraf-icon-section-fo">14 Stylish and User-Friendly App Design Concepts · Task Manager App 
+               
+                    <img  src="./images/img8.jpg" alt="Meditation App" width="360" height="300">
+              
+                    <p class="paragraf-icon-section-fo">14 Stylish and User-Friendly App Design Concepts · Task Manager App 
                     · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
                 <div  class="flex-potfolio-text">
@@ -321,8 +439,11 @@
             </li>
             <li  class="images-section-fo li-list">
                 <div class="conteiner-icon-section-fo">
-                <img src="./images/img9.jpg" alt="Taxi Service" width="360" height="300">
-                <p class="paragraf-icon-section-fo">14 Stylish and User-Friendly App Design Concepts · Task Manager App 
+
+                   
+             <img src="./images/img9.jpg" alt="Taxi Service" width="360" height="300">
+          
+             <p class="paragraf-icon-section-fo">14 Stylish and User-Friendly App Design Concepts · Task Manager App 
                     · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
                 <div class="flex-potfolio-text"> 
@@ -332,7 +453,10 @@
             </li>
             <li class="images-section-fo li-list">
                 <div class="conteiner-icon-section-fo">
+                    
+                    
                 <img  src="./images/img10.jpg" alt="Screen Illustrations" width="360" height="300">
+          
                 <p class="paragraf-icon-section-fo">14 Stylish and User-Friendly App Design Concepts · Task Manager App 
                     · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
@@ -343,7 +467,9 @@
             </li>
             <li class="images-section-fo  li-list">
                 <div class="conteiner-icon-section-fo">
+
                 <img  src="./images/img11.jpg" alt="Online Courses" width="360" height="300">
+           
                 <p class="paragraf-icon-section-fo">14 Stylish and User-Friendly App Design Concepts · Task Manager App 
                     · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
@@ -354,9 +480,9 @@
             </li>
         </ul>
     </div>
-</section> -->
+</section>
 </main>  
-<!-- <footer class="footer flex-footer">
+<footer class="footer flex-footer">
     <div class="container footer-container">  
 <div class="logo-hover-paragraf">
        <a class="footer-logo flex-footer-logo" href="./index.html">Web<span class="footer-logo-span">Studio</span></a> 
@@ -366,7 +492,7 @@
     </p>
 
 </div>
-<div>
+<div class="footer-link-container">
     <p class="footer-poragraf-social">Social media</p>
     <ul class="footer-ul-icon">
         <li class="footer-li-icon">
@@ -410,7 +536,10 @@
 </p>
 <form  class="form-footer">
 <label  class="footer-label-class">
-    <input  type="email" name="user-email" placeholder="E-mail" class="input-subscribe-footer">
+    <input  type="email" name="user-email" 
+    placeholder="E-mail" 
+    class="input-subscribe-footer"
+    >
 </label>
 
 <button type="submit" class="button-label-foter">Subscribe
@@ -424,9 +553,9 @@
 
 </div>
 
-</footer> -->
+</footer>
 <!-- is-open -->
-<!-- <div class="bakdrop "> 
+<div class="bakdrop"> 
     <div class="modal">
         <button type="button" class="modal-butoon-x">
             <svg class="button-icon-modal" width="8" height="8">
@@ -524,7 +653,7 @@
 
 </form>
 </div>
-</div> -->
+</div>
 
 
 
