@@ -85,6 +85,7 @@ ul{
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-left: 0;
 }
 li{
   padding: 0;
@@ -359,7 +360,7 @@ display: none;
 }
 
 .section-strategy-list{
-font-family:"Raleway",sans-serif;
+  font-family: "Roboto", sans-serif;
 color: #2e2f42;
 font-weight: 700;
 font-size: 36px;
@@ -386,17 +387,15 @@ text-align: center;
   background-color: #f4f4fd;
   padding: 96px 0;
 }
-.fri-cntainer{
-  padding-left: 28px;
-  padding-right: 28px;
-}
 
 .section-team-logo{
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 72px;
 color: #2E2F42;
 
 
@@ -598,6 +597,7 @@ letter-spacing: 0.02em;
  }
 
 .flex-section-logo{
+  font-family: "Roboto", sans-serif;
   max-width: 527px;
 margin: auto;
 margin-bottom: 48px;
@@ -644,10 +644,14 @@ margin-bottom: 8px;
 }
 
 /* section 3 */
+.fri-cntainer{
+  padding-left: 28px;
+  padding-right: 28px;
+}
 .flex-section-fri{
 margin-top: 120px;
-padding-top: 120px;
-padding-bottom :120px; 
+padding-top: 96px;
+padding-bottom :96px; 
 margin: 0;
 }
 
@@ -825,7 +829,7 @@ text-align: center;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  max-width: 265px;
 }
 
 .footer-poragraf-social{
@@ -946,18 +950,17 @@ text-align: center;
 /* BAKDROP */
 
 .bakdrop{
-   position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 99;
-    width: 100%;
-    height: 100%;
-    background: rgba(46, 47, 66, 0.4);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open{
@@ -973,8 +976,7 @@ pointer-events:auto;
   transform: translate(-50%, -50%) scale(1);
   width: 288px;
   min-height: 623px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
   border-radius: 4px;
   padding: 72px 16px 24px 16px;
@@ -1129,7 +1131,7 @@ border-color:#404BBF;
 
 
  .hecboxs-modal-div{
-  margin-bottom: 24px;
+
 
  }
  /* ЧЕКБОКС */
@@ -1139,10 +1141,13 @@ border-color:#404BBF;
  }
 
  .checkbox-input-label{
+  color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
 
  }
  .span-checkbox-input-label{
@@ -1150,13 +1155,14 @@ border-color:#404BBF;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-   border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display:  inline-flex;
-  align-items: center; 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
+  align-self: center;
   fill: transparent;
   margin-right: 8px;
+  flex-shrink: 0;
 
  }
  .checkbox-modal-input:checked + .checkbox-input-label span{
@@ -1166,37 +1172,39 @@ border-color:#404BBF;
 
  }
  .a-inputlabel{
-
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
   color: #4d5ae5;
  }
 
  
 
 .button-icon-modal-finish{
-  margin: auto;
   display: block;
-  width: 169px;
-  height: 56px;
-  background-color: #404BBF;
-  color: #ffffff;
   min-width: 169px;
+  height: 56px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-cursor: pointer;
-background-color: #4D5AE5;
-border: none;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  color: #fff;
+  background-color: #4d5ae5;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  margin: 0 auto;
 margin-top: 24px;
-
 }
-.button-icon-modal-finish:hover{
-  background-color: #4000ff;
-}
+.button-icon-modal-finish:hover,
 .button-icon-modal-finish:focus{
-  border-color: #0015fc;
+  background-color: #404bbf;
 }
+
 .text-buton{
   font-size: 16px;
   max-width: 105px;
@@ -1390,7 +1398,14 @@ row-gap: 72px;
 .input-subscribe-footer{
   width: 264px;
 }
+.modal{
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
 }
+
+}
+
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -1517,14 +1532,17 @@ row-gap: 72px;
 .input-subscribe-footer{
   width: 264px;
 }
-/* BACDROP */
+/* bacdrop */
 .bakdrop{
   position: fixed;
+  left: 0;
   top: 0;
+  z-index: 99;
   width: 100%;
   height: 100%;
-
-    }
+  background: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
     .modal{
       position: absolute;
       width: 408px;
